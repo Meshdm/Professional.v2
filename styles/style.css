@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .container {
@@ -13,13 +13,14 @@
 }
 
 .header {
-    background-color: #191919;
+    background-color: #1f4e78;
     height: 100px;
     color: white;
 }
 
 .header__information {
     display: flex;
+    padding-top: 5px;
 }
 
 .header__address {
@@ -43,8 +44,8 @@
 }
 
 .header__button {
-    background-color: #191919;
-    border-color: rgb(19, 19, 19);
+    background-color: #1c4468;
+    border-color: rgb(20, 24, 63);
     color: white;
     width: 200px;
     font-size: 18px;
@@ -62,7 +63,7 @@
 }
 
 .banner__header {
-    margin-top: -40rem;
+    margin-top: -35rem;
     font-size: 70px;
     color: rgb(255, 255, 255);
     margin-left: 20px;
@@ -137,7 +138,7 @@
 }
 
 .services__item {
-    width: 100%;
+    width: 60%;
     border: 1px solid #ccc;
 }
 
@@ -145,15 +146,16 @@
     margin-left: 8px;
 }
 
-.services__item img {
-    width: 300px;
-    height: 230px;
-}
-
 .services__description {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.services__item img {
+    width: 160px;
+    height: 150px;
+    margin-left: 10px;
 }
 
 .contacts {
@@ -209,7 +211,9 @@
  
 .contacts__form-btn {
     height: 50px;
-    background-color: black;
+    background-color: #1f4e78;
+    border-color: #1c4468;
+    border-style: none;
     color: white;
 }
 
@@ -220,7 +224,7 @@
 }
 
 .footer {
-    background-color: black;
+    background-color: #1f4e78;
     color: white;
 }
 
@@ -305,4 +309,99 @@
 
 .worker__description {
     background-image: url(/images/random-chel-2.jpg);
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        width: 830px;
+    }
+    .header__information {
+        padding-left: 20px;
+    }
+    .header__nav-wrapper {
+        padding-left: 20px;
+    }
+    .header__nav a {
+        font-size: 17px;
+    }
+    
+    .container {
+        width: 800px;
+    }
+
+    .container__v2 {
+        width: 900px;
+    }
+
+    .banner__photo {
+        width: 800px;
+    }
+
+    .banner__header {
+        font-size: 50px;
+    }
+
+    .facts__item {
+        margin-left: 30px;
+    }
+
+    .facts__item p {
+        font-size: 17px;
+    }
+
+    .services__description h2 {
+        font-size: 50px;
+    }
+
+    .services__description p {
+        font-size: 20px;
+    }
+
+    .services__item {
+        width: 100%;
+    }
+
+    .services__img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .contacts__description h2 {
+        font-size: 30px;
+    }
+
+    .contacts__contact {
+        font-size: 24px;
+    }
+
+    .contacts__description p {
+        font-size: 20px;
+    }
+
+    .footer {
+        width: 900px;
+    }
+
+    .footer__address {
+        margin-left: 20px;
+    }
+
+    .footer__information {
+        margin-left: 10px;
+    }
+
+    .footer__logo {
+        margin-left: 20px;
+    }
+
+    .footer__phone {
+        margin-left: 20px;
+    }
+
+    .footer_email {
+        margin-left: 20px;
+    }
+
+
+
 }
